@@ -84,3 +84,5 @@ choco install google-backup-and-sync -y
 #choco install visualstudio2019sql -y #werkt nog niet met de release versie
 choco install lightshot.install -y
 #https://chocolatey.org/packages/chocolatey-visualstudio.extension
+choco install postman -y
+choco install soapui -y
