@@ -86,3 +86,5 @@ choco install lightshot.install -y
 #https://chocolatey.org/packages/chocolatey-visualstudio.extension
 choco install postman -y
 choco install soapui -y
+choco install calibre -y
+
