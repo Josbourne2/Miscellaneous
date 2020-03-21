@@ -24,14 +24,15 @@ SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
 choco install sql-server-2017 --params="'/INSTANCEDIR=D:\Data\MSSQLSERVER /INDICATEPROGRESS'" -y
 choco install sql-server-management-studio -y
-choco install visualstudio2019community -y
+#choco install visualstudio2019community -y
 choco install notepadplusplus.install -y
+choco install cmder -y
 choco install googlechrome -y
 choco install adblockpluschrome -y
 choco install adobereader -y
-choco install jre8 -y
+#choco install jre8 -y
 choco install git.install -y
-choco install putty.install -y
+#choco install putty.install -y
 choco install sysinternals -y
 choco install filezilla -y
 choco install teamviewer -y
@@ -48,29 +49,29 @@ choco install sqlsentryplanexplorer -y
 choco install azure-data-studio -y
 choco install powerbi -y
 #choco install docker-desktop -y
-choco install github-desktop -y
+#choco install github-desktop -y
 #choco install gitkraken 
 #choco install python3 -y
 #choco install sql-server-express -y
 #choco install sqltoolbelt -Y
 choco install microsoft-teams -y
 #choco install slack -y
-choco install minikube -y
+#choco install minikube -y
 choco install kubernetes-helm -y
 choco install kubernetes-cli -y
 choco install microsoftazurestorageexplorer -y
 choco install nodejs.install -y
-choco install r.project -y
-choco install r.studio -y
-choco install awscli -y
-choco install markdownmonster -y
+#choco install r.project -y
+#choco install r.studio -y
+#choco install awscli -y
+#choco install markdownmonster -y
 choco install paint.net -y
 choco install nuget.commandline -y
 choco install curl -y
 choco install cpu-z -y
 choco install treesizefree -y
 choco install azure-cli -y
-choco install poshgit -y
+#choco install poshgit -y komt al mee met cmder
 choco install git-credential-manager-for-windows -y
 choco install rdcman -y
 choco install spotify -y
