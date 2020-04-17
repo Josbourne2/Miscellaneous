@@ -10,6 +10,7 @@ function ShowFileExtensions()
  
 ShowFileExtensions
 
+#Create default folders
 New-Item -ItemType Directory -Force -Path D:\Data
 New-Item -ItemType Directory -Force -Path D:\Software
 New-Item -ItemType Directory -Force -Path D:\GoogleDrive
@@ -22,9 +23,22 @@ Set-ExecutionPolicy Bypass -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
 SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
+#SQL Server 2017 Developer edition and tools
 choco install sql-server-2017 --params="'/INSTANCEDIR=D:\Data\MSSQLSERVER /INDICATEPROGRESS'" -y
 choco install sql-server-management-studio -y
-#choco install visualstudio2019community -y
+choco install sqlsearch -y
+choco install sqlsentryplanexplorer -y
+choco install azure-data-studio -y
+
+#Visual Studio and workloads
+choco install visualstudio2019professional -y
+choco install visualstudio2019-workload-manageddesktop
+choco install visualstudio2019-workload-data
+choco install ssis-vs2019 -y
+
+
+#Other tools
+choco install soapui -y
 choco install notepadplusplus.install -y
 choco install cmder -y
 choco install googlechrome -y
@@ -41,15 +55,14 @@ choco install vscode-powershell -y
 choco install vscode-csharp -y
 choco install vscode-mssql -y
 choco install vscode-gitattributes -y
-choco install winmerge -y
-choco install ssis-vs2019 -y
+#choco install winmerge -y
+
 choco install crystaldiskmark -y
-choco install sqlsearch -y
-choco install sqlsentryplanexplorer -y
-choco install azure-data-studio -y
+
+
 choco install powerbi -y
 #choco install docker-desktop -y
-#choco install github-desktop -y
+choco install github-desktop -y
 #choco install gitkraken 
 #choco install python3 -y
 #choco install sql-server-express -y
@@ -73,10 +86,10 @@ choco install treesizefree -y
 choco install azure-cli -y
 #choco install poshgit -y komt al mee met cmder
 choco install git-credential-manager-for-windows -y
-choco install rdcman -y
+choco install mremoteng -y
 choco install spotify -y
 #choco install office365proplus -y
-choco install pester -y
+#choco install pester -y
 #choco install docker-cli -y
 #choco install lastpass -y
 choco install whatsapp -y
