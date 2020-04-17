@@ -35,6 +35,7 @@ choco install visualstudio2019professional -y
 choco install visualstudio2019-workload-manageddesktop
 choco install visualstudio2019-workload-data
 choco install ssis-vs2019 -y
+choco install dotnetcore-sdk -y
 
 
 #Other tools
