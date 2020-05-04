@@ -42,8 +42,12 @@ choco install ssis-vs2019 -y
 choco install dotnetcore-sdk -y
 
 #Download and install VS extensions
+#BimlExpress plugin
 Invoke-WebRequest -Uri https://www.varigence.com/downloads/bimlexpress.vsix -OutFile "D:\Software\bimlexpress.vsix"
 D:\Software\bimlexpress.vsix
+#VS Web Essentials 2019
+Invoke-WebRequest -Uri http://vsixgallery.com/extensions/509fc133-d9a6-4cf7-a558-e00fd11e0f9f/Web%20Essentials%202019%20v0.5.10.vsix -OutFile "D:\Software\WebEssentials2019.vsix"
+D:\Software\WebEssentials2019.vsix
 
 #Other tools
 choco install soapui -y
