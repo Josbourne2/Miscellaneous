@@ -32,22 +32,28 @@ choco install azure-data-studio -y
 
 #Visual Studio and workloads
 choco install visualstudio2019professional -y
-choco install visualstudio2019-workload-manageddesktop
-choco install visualstudio2019-workload-data
+choco install visualstudio2019-workload-manageddesktop -y
+choco install visualstudio2019-workload-data -y
+choco install visualstudio2019-workload-netweb -y
+choco install visualstudio2019-workload-node -y
+choco install visualstudio2019-workload-netcoretools -y
+choco install visualstudio2019-workload-netcrossplat -y
 choco install ssis-vs2019 -y
 choco install dotnetcore-sdk -y
 
+#Download and install VS extensions
+Invoke-WebRequest -Uri https://www.varigence.com/downloads/bimlexpress.vsix -OutFile "D:\Software\bimlexpress.vsix"
+D:\Software\bimlexpress.vsix
 
 #Other tools
 choco install soapui -y
+choco install postman -y
 choco install notepadplusplus.install -y
 choco install cmder -y
 choco install googlechrome -y
 choco install adblockpluschrome -y
 choco install adobereader -y
-#choco install jre8 -y
-choco install git.install -y
-#choco install putty.install -y
+choco install git -y
 choco install sysinternals -y
 choco install filezilla -y
 choco install teamviewer -y
@@ -56,29 +62,12 @@ choco install vscode-powershell -y
 choco install vscode-csharp -y
 choco install vscode-mssql -y
 choco install vscode-gitattributes -y
-#choco install winmerge -y
-
 choco install crystaldiskmark -y
-
-
 choco install powerbi -y
-#choco install docker-desktop -y
 choco install github-desktop -y
-#choco install gitkraken 
-#choco install python3 -y
-#choco install sql-server-express -y
-#choco install sqltoolbelt -Y
 choco install microsoft-teams -y
-#choco install slack -y
-#choco install minikube -y
-choco install kubernetes-helm -y
-choco install kubernetes-cli -y
 choco install microsoftazurestorageexplorer -y
 choco install nodejs.install -y
-#choco install r.project -y
-#choco install r.studio -y
-#choco install awscli -y
-#choco install markdownmonster -y
 choco install paint.net -y
 choco install nuget.commandline -y
 choco install curl -y
@@ -89,17 +78,13 @@ choco install azure-cli -y
 choco install git-credential-manager-for-windows -y
 choco install mremoteng -y
 choco install spotify -y
-#choco install office365proplus -y
+choco install office365proplus -y
 #choco install pester -y
 #choco install docker-cli -y
 #choco install lastpass -y
 choco install whatsapp -y
 #choco install google-drive-file-stream -y #alleen met business account
 choco install google-backup-and-sync -y
-#choco install visualstudio2019sql -y #werkt nog niet met de release versie
 choco install lightshot.install -y
 #https://chocolatey.org/packages/chocolatey-visualstudio.extension
-choco install postman -y
-choco install soapui -y
 choco install calibre -y
-
