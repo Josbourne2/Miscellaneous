@@ -24,7 +24,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
 #SQL Server 2017 Developer edition and tools
-choco install sql-server-2017 --params="'/INSTANCEDIR=D:\Data\MSSQLSERVER /INDICATEPROGRESS'" -y
+choco install sql-server-2019 --params="'/INSTANCEDIR=D:\Data\MSSQLSERVER /INDICATEPROGRESS'" -y
 choco install sql-server-management-studio -y
 choco install sqlsearch -y
 choco install sqlsentryplanexplorer -y
