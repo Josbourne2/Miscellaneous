@@ -1,5 +1,9 @@
 ####### IMPORTANT ########
 #This script should be run as Administrator
+#Before execution you should enable the running of scripts: type the following line in another Powershell session (as Administrator):
+
+#Set-ExecutionPolicy RemoteSigned 
+
 #Restarts happen automatically: after a restart this script needs to be restarted manually
 #You can restart the script from the top
 #This script is almost unattended: this means that you need to stick around to click "Yes" or "Next" a few times..
@@ -12,6 +16,7 @@ $softwareFolderPath = "D:\Software"
 $googleDriveFolderPath = "D:\GoogleDrive"
 
 #Configure required modules and functions
+
 Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted 
 Install-Module PendingReboot
 function RestartIfNeeded()
@@ -50,7 +55,7 @@ RestartIfNeeded
 choco install sql-server-2019 --params="'/INSTANCEDIR=$dataFolderPath\MSSQLSERVER /INDICATEPROGRESS'" -y
 choco install sql-server-management-studio -y
 choco install sqlsearch -y
-choco install sqlsentryplanexplorer -y
+#choco install sqlsentryplanexplorer -y #Broken, new download link is https://downloads.sentryone.com/downloads/sqlsentryplanexplorer/x64/PlanExplorerInstaller.exe
 choco install azure-data-studio -y
 
 RestartIfNeeded
@@ -71,11 +76,13 @@ RestartIfNeeded
 choco install soapui -y
 choco install postman -y
 choco install notepadplusplus.install -y
-choco install cmder -y
-choco install googlechrome -y
-choco install adblockpluschrome -y
-choco install adobereader -y
+choco install nodejs-lts -y 
 choco install git -y
+choco install cmder -y
+#choco install googlechrome -y
+choco install microsoft-edge -y
+#choco install adblockpluschrome -y
+choco install adobereader -y
 choco install sysinternals -y
 choco install filezilla -y
 choco install teamviewer -y
@@ -89,29 +96,24 @@ choco install powerbi -y
 choco install github-desktop -y
 choco install microsoft-teams -y
 choco install microsoftazurestorageexplorer -y
-choco install nodejs-lts -y 
 choco install paint.net -y
-choco install nuget.commandline -y
 choco install curl -y
 choco install cpu-z -y
 choco install treesizefree -y
 choco install azure-cli -y
-#choco install poshgit -y komt al mee met cmder
+#choco install poshgit -y #Already included with the cmder package.
 choco install git-credential-manager-for-windows -y
 choco install mremoteng -y
 choco install spotify -y
 choco install office365proplus -y
-#choco install pester -y
-#choco install docker-cli -y
-#choco install lastpass -y
 choco install whatsapp -y
-#choco install google-drive-file-stream -y #alleen met business account
-choco install google-backup-and-sync -y
+#choco install google-drive-file-stream -y #Only when you are using a Google business account
+choco install google-backup-and-sync -y #For "normal" people :-)
 choco install lightshot.install -y
 #https://chocolatey.org/packages/chocolatey-visualstudio.extension
-choco install calibre -y
+choco install calibre -y #An ebook tool + reader for managing your ereader
 choco install 7zip -y
-
+choco install keepass -y
 #Download and install VS extensions
 #BimlExpress plugin
 Invoke-WebRequest -Uri https://www.varigence.com/downloads/bimlexpress.vsix -OutFile "$softwareFolderPath\bimlexpress.vsix"
