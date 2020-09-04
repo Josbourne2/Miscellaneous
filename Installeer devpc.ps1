@@ -47,8 +47,7 @@ New-Item -ItemType Directory -Force -Path $googleDriveFolderPath
 Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "ConsentPromptBehaviorAdmin" -Value "0" 
 
 #Get chocolatey
-Set-ExecutionPolicy Bypass -Force
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 Set-Variable "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 RestartIfNeeded
 #SQL Server 2019 Developer edition and tools
