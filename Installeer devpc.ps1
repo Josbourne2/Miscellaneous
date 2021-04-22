@@ -59,7 +59,7 @@ choco install azure-data-studio -y
 
 RestartIfNeeded
 #Visual Studio and workloads
-choco install visualstudio2019professional -y
+choco install visualstudio2019enterprise -y
 choco install visualstudio2019-workload-manageddesktop -y
 choco install visualstudio2019-workload-data -y
 choco install visualstudio2019-workload-netweb -y
