@@ -125,8 +125,8 @@ sql = "</Prefix>
         <PlaceListOnNewLine>true</PlaceListOnNewLine>
         <FirstItemIndentType>AlignWithKeyword</FirstItemIndentType>
         <FirstItemIndentSize>5</FirstItemIndentSize>
-        <PlaceEachItemOnSeparateLine>false</PlaceEachItemOnSeparateLine>
-        <CommaPosition>AfterItem</CommaPosition>
+        <PlaceEachItemOnSeparateLine>true</PlaceEachItemOnSeparateLine>
+        <CommaPosition>BeforeItem</CommaPosition>
         <DoNotIndentComma>false</DoNotIndentComma>
       </ListFormattingOptions>
       <ListFormattingOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="Variables">
@@ -224,7 +224,7 @@ sql = "</Prefix>
         <OpeningParenthesisMoveToNewLineOnOff>false</OpeningParenthesisMoveToNewLineOnOff>
         <OpeningParenthesisNewLineIndentType>Fixed</OpeningParenthesisNewLineIndentType>
         <OpeningParenthesisMoveToNewLineIndentSize>0</OpeningParenthesisMoveToNewLineIndentSize>
-        <ClosingParenthesisMoveToNewLineOnOff>false</ClosingParenthesisMoveToNewLineOnOff>
+        <ClosingParenthesisMoveToNewLineOnOff>true</ClosingParenthesisMoveToNewLineOnOff>
         <ClosingParenthesisNewLineIndentType>AlignWithOpeningParenthesis</ClosingParenthesisNewLineIndentType>
         <ClosingParenthesisMoveToNewLineIndentSize>3</ClosingParenthesisMoveToNewLineIndentSize>
         <CodeBetweenParenthesisMoveToNewLineOnOff>false</CodeBetweenParenthesisMoveToNewLineOnOff>
