@@ -203,13 +203,13 @@ sql = "</Prefix>
         <FormatParenthesisOnOff>true</FormatParenthesisOnOff>
         <AddSpaceInsideParenthesis>true</AddSpaceInsideParenthesis>
         <AddSpaceOutsideParenthesis>false</AddSpaceOutsideParenthesis>
-        <DontMoveToNewLineIfNoNewLinesInBetween>false</DontMoveToNewLineIfNoNewLinesInBetween>
+        <DontMoveToNewLineIfNoNewLinesInBetween>true</DontMoveToNewLineIfNoNewLinesInBetween>
         <DontFormatIfNested>false</DontFormatIfNested>
         <OpeningParenthesisMoveToNewLineOnOff>false</OpeningParenthesisMoveToNewLineOnOff>
         <OpeningParenthesisNewLineIndentType>PlaceAtSamePosition</OpeningParenthesisNewLineIndentType>
         <OpeningParenthesisMoveToNewLineIndentSize>3</OpeningParenthesisMoveToNewLineIndentSize>
         <ClosingParenthesisMoveToNewLineOnOff>true</ClosingParenthesisMoveToNewLineOnOff>
-        <ClosingParenthesisNewLineIndentType>AlignWithOpeningParenthesis</ClosingParenthesisNewLineIndentType>
+        <ClosingParenthesisNewLineIndentType>Fixed</ClosingParenthesisNewLineIndentType>
         <ClosingParenthesisMoveToNewLineIndentSize>3</ClosingParenthesisMoveToNewLineIndentSize>
         <CodeBetweenParenthesisMoveToNewLineOnOff>false</CodeBetweenParenthesisMoveToNewLineOnOff>
         <CodeBetweenParenthesisNewLineIndentType>PlaceAtSamePosition</CodeBetweenParenthesisNewLineIndentType>
@@ -388,7 +388,7 @@ sql = "</Prefix>
     <OperationsLogicalOperationIndentType>Fixed</OperationsLogicalOperationIndentType>
     <OperationsLogicalOperationIndent>7</OperationsLogicalOperationIndent>
     <OperationsLogicalShowOnMultipleLines>true</OperationsLogicalShowOnMultipleLines>
-    <OperationsLogicalShowOnMultipleLinesPositionType>PlaceOperatorAfterOperand</OperationsLogicalShowOnMultipleLinesPositionType>
+    <OperationsLogicalShowOnMultipleLinesPositionType>PlaceOperatorBeforeOperand</OperationsLogicalShowOnMultipleLinesPositionType>
     <QueriesFormatDataStatements>true</QueriesFormatDataStatements>
     <QueriesFormatDataStatementsExceptWithLength>false</QueriesFormatDataStatementsExceptWithLength>
     <QueriesFormatDataStatementsMinLength>25</QueriesFormatDataStatementsMinLength>
