@@ -69,6 +69,7 @@ choco install dotnetcore-sdk -y
 RestartIfNeeded
 
 #Other tools
+choco install javaruntime -y
 choco install nswagstudio -y
 choco install soapui -y
 choco install postman -y
