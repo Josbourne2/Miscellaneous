@@ -110,6 +110,7 @@ choco install lightshot.install -y
 choco install calibre -y #An ebook tool + reader for managing your ereader
 choco install 7zip -y
 choco install keepass -y
+choco install ServiceBusExplorer -y
 
 
 Invoke-WebRequest -Uri https://www.apexsql.com/zips/ApexSQLRefactor.exe -OutFile "$softwareFolderPath\ApexSQLRefactor.exe"
