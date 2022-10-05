@@ -2,7 +2,7 @@
 #This script should be run as Administrator
 #Before execution you should enable the running of scripts: type the following line in another Powershell session (as Administrator):
 
-#Set-ExecutionPolicy RemoteSigned 
+Set-ExecutionPolicy RemoteSigned 
 
 #Restarts happen automatically: after a restart this script needs to be restarted manually
 #You can restart the script from the top
@@ -11,8 +11,8 @@
 #This will be after 30-60 minutes into the script..
 
 #Enter your desired folder paths. Or directory paths if you're old like me..
-$dataFolderPath = "C:\Data"
-$softwareFolderPath = "C:\Software"
+$dataFolderPath = "D:\Data"
+$softwareFolderPath = "D:\Software"
 #$googleDriveFolderPath = "D:\GoogleDrive"
 
 #Configure required modules and functions
@@ -65,7 +65,6 @@ choco install visualstudio2022-workload-data -y
 choco install visualstudio2022-workload-netweb -y
 choco install visualstudio2022-workload-node -y
 choco install dotnetcore-sdk -y
-
 RestartIfNeeded
 
 #Other tools
@@ -90,7 +89,7 @@ choco install vscode-csharp -y
 choco install vscode-mssql -y
 choco install vscode-gitattributes -y
 choco install crystaldiskmark -y
-choco install powerbi -y
+#choco install powerbi -y
 choco install github-desktop -y
 choco install microsoft-teams -y
 choco install microsoftazurestorageexplorer -y
@@ -112,10 +111,5 @@ choco install 7zip -y
 choco install keepass -y
 choco install ServiceBusExplorer -y
 
-
-Invoke-WebRequest -Uri https://www.apexsql.com/zips/ApexSQLRefactor.exe -OutFile "$softwareFolderPath\ApexSQLRefactor.exe"
-Invoke-Expression ($softwareFolderPath+"\ApexSQLRefactor.exe")
-Invoke-WebRequest -Uri https://www.apexsql.com/zips/ApexSQLComplete.exe -OutFile "$softwareFolderPath\ApexSQLComplete.exe"
-Invoke-Expression ($softwareFolderPath+"\ApexSQLComplete.exe")
 Invoke-WebRequest -Uri https://downloads.sentryone.com/downloads/sqlsentryplanexplorer/x64/PlanExplorerInstaller.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
 Invoke-Expression ($softwareFolderPath+"\PlanExplorerInstaller.exe")
