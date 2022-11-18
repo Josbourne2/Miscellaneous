@@ -67,6 +67,13 @@ choco install visualstudio2022-workload-node -y
 choco install dotnetcore-sdk -y
 RestartIfNeeded
 
+#Old .NET versions to support older code
+choco install dotnet4.5 -y
+choco install netfx-4.5.1-devpack -y
+choco install netfx-4.5.2-devpack -y
+choco install netfx-4.6-devpack -y
+choco install netfx-4.6.1-devpack -y
+
 #Other tools
 choco install javaruntime -y
 choco install nswagstudio -y
