@@ -77,6 +77,7 @@ choco install netfx-4.6.1-devpack -y
 #Docker desktop and prerequisites
 wsl --install
 choco install docker-desktop -y
+RestartIfNeeded
 
 #Other tools
 choco install javaruntime -y
