@@ -74,6 +74,10 @@ choco install netfx-4.5.2-devpack -y
 choco install netfx-4.6-devpack -y
 choco install netfx-4.6.1-devpack -y
 
+#Docker desktop and prerequisites
+wsl --install
+choco install docker-desktop -y
+
 #Other tools
 choco install javaruntime -y
 choco install nswagstudio -y
@@ -117,6 +121,8 @@ choco install calibre -y #An ebook tool + reader for managing your ereader
 choco install 7zip -y
 choco install keepass -y
 choco install ServiceBusExplorer -y
+
+
 
 Invoke-WebRequest -Uri https://downloads.sentryone.com/downloads/sqlsentryplanexplorer/x64/PlanExplorerInstaller.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
 Invoke-Expression ($softwareFolderPath+"\PlanExplorerInstaller.exe")
