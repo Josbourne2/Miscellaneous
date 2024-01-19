@@ -13,7 +13,6 @@ Set-ExecutionPolicy RemoteSigned
 #Enter your desired folder paths. Or directory paths if you're old like me..
 $dataFolderPath = "D:\Data"
 $softwareFolderPath = "D:\Software"
-#$googleDriveFolderPath = "D:\GoogleDrive"
 
 #Configure required modules and functions
 
@@ -50,10 +49,9 @@ Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Syste
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 Set-Variable "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 RestartIfNeeded
-#SQL Server 2019 Developer edition and tools
-choco install sql-server-2019 --params="'/INSTANCEDIR=$dataFolderPath\MSSQLSERVER /INDICATEPROGRESS'" -y
+#SQL Server 2022 Developer edition and tools
+choco install sql-server-2022 --params="'/INSTANCEDIR=$dataFolderPath\MSSQLSERVER /INDICATEPROGRESS'" -y
 choco install sql-server-management-studio -y
-choco install sqlsearch -y
 #choco install sqlsentryplanexplorer -y #Broken, new download link is https://downloads.sentryone.com/downloads/sqlsentryplanexplorer/x64/PlanExplorerInstaller.exe
 choco install azure-data-studio -y
 
@@ -64,6 +62,8 @@ choco install visualstudio2022-workload-manageddesktop -y
 choco install visualstudio2022-workload-data -y
 choco install visualstudio2022-workload-netweb -y
 choco install visualstudio2022-workload-node -y
+choco install visualstudio2022-workload-azure -y
+choco install visualstudio2022-workload-netcrossplat -y
 choco install dotnetcore-sdk -y
 RestartIfNeeded
 
@@ -125,5 +125,5 @@ choco install ServiceBusExplorer -y
 
 
 
-Invoke-WebRequest -Uri https://downloads.sentryone.com/downloads/sqlsentryplanexplorer/x64/PlanExplorerInstaller.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
-Invoke-Expression ($softwareFolderPath+"\PlanExplorerInstaller.exe")
+Invoke-WebRequest -Uri https://downloads.solarwinds.com/solarwinds/Release/SentryOne-SQLSentry/2023.2.7/SolarWinds-PlanExplorer.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
+Invoke-Expression ($softwareFolderPath+"\SolarWinds-PlanExplorer.exe")
