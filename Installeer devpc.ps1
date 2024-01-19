@@ -65,6 +65,7 @@ choco install visualstudio2022-workload-node -y
 choco install visualstudio2022-workload-azure -y
 choco install visualstudio2022-workload-netcrossplat -y
 choco install dotnetcore-sdk -y
+choco install dotnet -y
 RestartIfNeeded
 
 #Old .NET versions to support older code
