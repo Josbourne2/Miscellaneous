@@ -124,6 +124,5 @@ choco install keepass -y
 choco install ServiceBusExplorer -y
 
 
-
-Invoke-WebRequest -Uri https://downloads.solarwinds.com/solarwinds/Release/SentryOne-SQLSentry/2023.2.7/SolarWinds-PlanExplorer.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
+Invoke-WebRequest -Uri https://downloads.solarwinds.com/solarwinds/Release/FreeTool/SolarWinds-PlanExplorer.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
 Invoke-Expression ($softwareFolderPath+"\SolarWinds-PlanExplorer.exe")
