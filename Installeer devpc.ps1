@@ -67,6 +67,7 @@ choco install visualstudio2022-workload-netcrossplat -y
 choco install visualstudio2022-workload-universal -y
 choco install dotnet-8.0-sdk -y
 choco install dotnet-sdk -y
+dotnet tool install --global dotnet-ef --version 9.*
 RestartIfNeeded
 
 #Old .NET versions to support older code
