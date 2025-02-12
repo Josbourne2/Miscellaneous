@@ -135,3 +135,6 @@ choco install ServiceBusExplorer -y
 
 Invoke-WebRequest -Uri https://downloads.solarwinds.com/solarwinds/Release/FreeTool/SolarWinds-PlanExplorer.exe -OutFile "$softwareFolderPath\PlanExplorerInstaller.exe"
 Invoke-Expression ($softwareFolderPath+"\PlanExplorerInstaller.exe")
+
+Invoke-WebRequest -Uri https://www.devart.com/dbforge/sql/sqlcomplete/sqlcompletesql.exe -OutFile "$softwareFolderPath\sqlcompletesql.exe"
+Invoke-Expression ($softwareFolderPath+"\sqlcompletesql.exe")
